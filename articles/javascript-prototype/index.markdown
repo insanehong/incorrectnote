@@ -191,20 +191,20 @@ A.prototype.x = function () {
 var B = new A();
 var C = new A();
 
-console.log(B.x());
+B.x();
 > hello 
 
-console.log(C.x());
+C.x();
 > hello 
 
 A.prototype.x = function () {
      console.log('world');
 };
 
-console.log(B.x());
+B.x();
 > world
 
-console.log(C.x());
+C.x();
 > world
 ```
 위 예제에서 A의 `Prototype Object`의 x 메소드를 재정의 하였을 때 B,C객체도 그 영향을 받는다는 것을 알 수 있다. 그 이유는 **프로토타입 체인에 의한 공유 때문**이다. 아래의 그림을 잘 봐보기 바란다. 

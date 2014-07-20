@@ -140,7 +140,7 @@ console.log(foo);
 
 ```javascript
 var foo = {name:'foo'};
-console.log(foo[name]);
+console.log(foo['name']);
 > foo
 ```
 
